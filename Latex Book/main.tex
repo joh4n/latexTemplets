@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+
+
+
+\usepackage[parfill]{parskip} %get a line between paragraphs
+
+\usepackage{natbib}
+%\usepackage{cite}
+\bibliographystyle{plain}
+
+\title{Project 1}
+\author{Johan Gudmundsson}
+
+\usepackage{titlesec}
+\titleformat{\chapter}
+    {\normalfont\Huge\bfseries}
+    {}
+    {0pt}
+    {}
+
+\titlespacing*{\chapter}{0pt}{*11.5}{*8}
+
+\renewcommand{\chaptermark}[1]{\markright{\MakeUppercase{#1}}}
+
+\usepackage{listings}
+
+\begin{document}
+%\maketitle
+\begin{titlepage}
+
+%\vfill
+\begin{center}
+\includegraphics[height=8cm]{logocLUeng.eps}
+\\[20 mm]
+% put in line breaks to make the title look nicer and provide more
+% space between the lines
+{\large\bf Project 1.a\\[5 mm] }
+{Computational Physics, FYTN03 - fall 2014\\[20 mm]}
+{\today}\\[20 mm]
+
+{\bf Johan Gudmundsson}
+\\
+{johan.gudmundsson@gmail.com}
+
+\vfill
+% use the eps version for latex and the pdf version for pdflatex 
+
+%\includegraphics[height=4cm]{logocLUeng.pdf}
+\end{center}
+\end{titlepage}
+
+
+\tableofcontents
+\newpage 
+
+\chapter{Introduction}
+\addtocounter{chapter}{1}
+
+
+\chapter{Experiment}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\pagebreak
+
+\end{document}

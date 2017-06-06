@@ -1,0 +1,88 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{a4wide}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+\usepackage{natbib}
+
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}} %% roman numerals
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% first as you might guess the title page
+\begin{titlepage}
+
+%\vfill
+\begin{center}
+\includegraphics[height=8cm]{logocLUeng.eps}
+\\[20 mm]
+% put in line breaks to make the title look nicer and provide more
+% space between the lines
+{\large\bf Project 1.a\\[5 mm] }
+{Computational Physics, FYTN03 - fall 2014\\[20 mm]}
+{\today}\\[20 mm]
+
+{\bf Johan Gudmundsson}
+\\
+{johan.gudmundsson@gmail.com}
+
+\vfill
+% use the eps version for latex and the pdf version for pdflatex 
+
+%\includegraphics[height=4cm]{logocLUeng.pdf}
+\end{center}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% a page with the abstract and popular description
+\thispagestyle{empty} % do not count pages just yet
+\section*{Abstract}
+\addcontentsline{toc}{section}{\numberline{ }Abstract}
+
+
+% these 'rubber' spaces make the page layout look nicer
+%the \phantom{p} is to make something there for the \vfill to push against
+\phantom{p}
+\vfill
+
+
+\tableofcontents
+
+\section{Introduction}
+
+\phantom{p}
+\vfill
+\section{Background}
+%\setcounter{equation}{0}
+
+\phantom{p}
+\vfill
+\section{Applications}
+%\setcounter{equation}{0}
+
+\phantom{p}
+\vfill
+\section{Conclusions}
+%\setcounter{equation}{0}
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+
+\end{document}
